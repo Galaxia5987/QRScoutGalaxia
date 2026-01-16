@@ -63,20 +63,23 @@ export default function SelectInput(props: ConfigurableInputProps) {
   if (!data || !data?.choices) {
     return <div>Invalid input</div>;
   }
+  const placeholder = data.choices[''] ?? undefined;
 
   return (
     <Select name={data.title} onValueChange={handleSelect} value={value}>
       <SelectTrigger>
-        <SelectValue />
+        <SelectValue placeholder={placeholder} />
       </SelectTrigger>
       <SelectContent>
-        {Object.keys(data.choices).map(o => {
-          return (
-            <SelectItem key={o} value={o}>
-              {data.choices?.[o]}
-            </SelectItem>
-          );
-        })}
+        {Object.keys(data.choices)
+          .filter(k => k !== '')
+          .map(o => {
+            return (
+              <SelectItem key={o} value={o}>
+                {data.choices?.[o]}
+              </SelectItem>
+            );
+          })}
       </SelectContent>
     </Select>
   );
