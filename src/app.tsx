@@ -7,8 +7,6 @@ import { ConfigSection } from './components/Sections/ConfigSection';
 import { ThemeProvider } from './components/ThemeProvider';
 import { useQRScoutState } from './store/store';
 
-import { StatsigProvider, useClientAsyncInit } from '@statsig/react-bindings';
-import { runStatsigAutoCapture } from '@statsig/web-analytics';
 import { FloatingFormValue } from './components/FloatingFormValue';
 
 export function App() {
@@ -16,16 +14,7 @@ export function App() {
     teamNumber: state.formData.teamNumber,
     pageTitle: state.formData.page_title,
   }));
-  const { client } = useClientAsyncInit(
-    import.meta.env.VITE_STATSIG_CLIENT_KEY,
-    {
-      userID: `${teamNumber}`,
-    },
-  );
 
-  useEffect(() => {
-    runStatsigAutoCapture(client);
-  }, [client]);
 
   return (
     <ThemeProvider>
