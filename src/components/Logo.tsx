@@ -1,7 +1,9 @@
 const defaultStyle = {
-  fill: '#ef3340',
+  fill: '#0xFF2196F3',
   fillOpacity: 1,
 };
+
+//0xFF2196F3
 
 const strokeStyle = {
   stroke: '#000000',
