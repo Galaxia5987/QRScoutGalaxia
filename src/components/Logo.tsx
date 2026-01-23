@@ -6,7 +6,7 @@ const defaultStyle = {
 //0xFF2196F3
 
 const strokeStyle = {
-  stroke: '#000000',
+  stroke: '#2196F3',
   strokeWidth: 0,
 };
 
@@ -116,7 +116,7 @@ export function Logo() {
             >
               <path
                 style={{
-                  fill: '#ef3340',
+                  fill: '#2196F3',
                   fillOpacity: 1,
                   strokeWidth: 1.4906,
                   strokeDasharray: 'none',
@@ -130,7 +130,7 @@ export function Logo() {
                 style={{
                   fill: 'none',
                   fillOpacity: 1,
-                  stroke: '#ef3340',
+                  stroke: '#2196F3',
                   strokeWidth: 1.4906,
                   strokeDasharray: 'none',
                   strokeOpacity: 1,
@@ -143,9 +143,9 @@ export function Logo() {
               />
               <path
                 style={{
-                  fill: '#b31b1b',
+                  fill: '#2196F3',
                   fillOpacity: 1,
-                  stroke: '#ef3340',
+                  stroke: '#2196F3',
                   strokeWidth: 1.20314,
                   strokeDasharray: 'none',
                   strokeOpacity: 1,
@@ -155,9 +155,9 @@ export function Logo() {
               />
               <path
                 style={{
-                  fill: '#ef3340',
+                  fill: '#2196F3',
                   fillOpacity: 1,
-                  stroke: '#ef3340',
+                  stroke: '#2196F3',
                   strokeWidth: 1.20314,
                   strokeDasharray: 'none',
                   strokeOpacity: 1,
