@@ -194,22 +194,44 @@
                     "defaultValue": false
                 },
                 {
-                    "title": "Fuel scored",
-                    "description": "The amount of fuel scored in auto",
+                    "title": "Robot Fuel Scored",
+                    "description": "The amount of fuel scored in auto (by the robot)",
                     "type": "counter",
                     "required": false,
-                    "code": "FIA",
+                    "code": "FIT",
                     "formResetBehavior": "reset",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
                 },
               {
-                "title": "Fuel missed",
-                "description": "The amount of fuel missed in auto",
+                "title": "Robot Fuel missed",
+                "description": "The amount of fuel missed in auto (by the robot)",
                 "type": "counter",
                 "required": false,
-                "code": "FMA",
+                "code": "FMT",
+                "formResetBehavior": "reset",
+                "defaultValue": 0,
+                "min": 0,
+                "step": 1
+              },
+                {
+                    "title": "Human Fuel Scored",
+                    "description": "The amount of fuel scored directly by the human player in auto",
+                    "type": "counter",
+                    "required": false,
+                    "code": "HFS",
+                    "formResetBehavior": "reset",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "step": 1
+                },
+              {
+                "title": "Human Fuel missed",
+                "description": "The amount of fuel missed directly by the human player in auto",
+                "type": "counter",
+                "required": false,
+                "code": "HFM",
                 "formResetBehavior": "reset",
                 "defaultValue": 0,
                 "min": 0,
@@ -306,7 +328,7 @@
               },
                 {
                     "title": "Human Fuel Scored",
-                    "description": "The amount of fuel scored directly by the human player",
+                    "description": "The amount of fuel scored directly by the human player in teleop",
                     "type": "counter",
                     "required": false,
                     "code": "HFS",
@@ -317,7 +339,7 @@
                 },
               {
                 "title": "Human Fuel missed",
-                "description": "The amount of fuel missed directly by the human player",
+                "description": "The amount of fuel missed directly by the human player in teleop",
                 "type": "counter",
                 "required": false,
                 "code": "HFM",
